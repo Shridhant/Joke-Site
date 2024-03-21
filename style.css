@@ -1,0 +1,100 @@
+/* Base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+  color: whitesmoke;
+}
+
+.container {
+  position: relative; /* Change position to relative */
+  max-width: 1200px; /* Set maximum width */
+  width: 90%; /* Adjust width to your preference */
+  margin: 30px auto;
+  padding: 50px;
+}
+
+#d1 {
+  height: auto; /* Change height to auto */
+  max-width: 100%; /* Set maximum width */
+  background: linear-gradient(to right, #544a7d, #ffd452);
+  overflow: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline dotted 4px #efdd8d;
+  font-family: "ClashDisplay-Bold";
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline dotted 4px #53a548;
+  font-family: "ClashDisplay-Bold";
+  margin: 2em;
+}
+
+p {
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+}
+
+button {
+  height: 5vh;
+  width: 13vw;
+  border-color: lightcoral;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 20px; /* Position at the bottom */
+  left: 50%;
+  transform: translate(-50%);
+}
+
+button:hover {
+  background: linear-gradient(to right, #654ea3, #eaafc8);
+  color: white;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .container {
+    padding: 30px;
+  }
+
+  #d1 {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.2em;
+    bottom: 10px;
+  }
+}
